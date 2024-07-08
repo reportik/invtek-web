@@ -18,4 +18,4 @@ RUN pip install -r requirements.txt
 # Deploy templates and prepare app
 RUN reflex init
 # Always apply migrations before starting the backend.
-CMD [ -d alembic ] && reflex db migrate; reflex run --env prod
+CMD [ -d alembic ] && reflex db migrate; reflex run --env prod --loglevel debug
