@@ -28,11 +28,11 @@ class PageState(rx.State):
     @staticmethod
     def update_timezone_sync(timezone: str):
         # Usa asyncio.run para ejecutar la coroutine
-        asyncio.run(PageState().update_timezone(timezone))   
-        
-    def update_timezone(self, timezone: str):
+        asyncio.run(PageState().update_timezone(timezone))
+
+    async def update_timezone(self, timezone: str):
         self.timezone = timezone
-        self.next_live = utils.next_date(schedule(), self.timezone) 
+        self.next_live = utils.next_date(await schedule(), self.timezone)
 
     async def featured_links(self):
         self.featured_info = await featured()
