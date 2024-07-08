@@ -1,4 +1,4 @@
-import link_bio.constants as const
+import constants as const
 from link_bio.model.Featured import Featured
 from link_bio.model.Live import Live
 from .TwitchAPI import TwitchAPI

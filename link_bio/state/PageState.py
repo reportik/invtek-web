@@ -1,5 +1,5 @@
 import reflex as rx
-import link_bio.utils as utils
+import utils as utils
 from link_bio.api.api import live, featured, schedule
 from link_bio.model.Featured import Featured
 from link_bio.model.Live import Live

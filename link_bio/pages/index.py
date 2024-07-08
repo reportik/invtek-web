@@ -1,5 +1,5 @@
 import reflex as rx
-import link_bio.utils as utils
+import utils as utils
 import link_bio.styles.styles as styles
 from link_bio.components.navbar import navbar
 from link_bio.components.footer import footer

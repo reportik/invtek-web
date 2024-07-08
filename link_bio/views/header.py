@@ -1,6 +1,6 @@
 import reflex as rx
 import datetime
-import link_bio.constants as const
+import constants as const
 from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon

@@ -1,6 +1,6 @@
 import reflex as rx
 import link_bio.styles.styles as styles
-from link_bio.routes import Route
+from routes import Route
 from link_bio.styles.styles import Size
 from link_bio.styles.colors import Color
 

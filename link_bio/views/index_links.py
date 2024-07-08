@@ -1,8 +1,8 @@
 import reflex as rx
-import link_bio.constants as const
+import constants as const
 from link_bio.components.newsletter import newsletter
 from link_bio.components.featured_link import featured_link
-from link_bio.routes import Route
+from routes import Route
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
 from link_bio.styles.styles import Color, Spacing
