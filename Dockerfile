@@ -14,13 +14,13 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Deploy templates and prepare app
-RUN reflex init
+RUN reflex init --template https://github.com/pynecone-io/pynecone-examples/tree/main/dalle
 
 # Download all npm dependencies and compile frontend
-RUN reflex export --frontend-only --no-zip
+#RUN reflex export --frontend-only --no-zip
 
 # Needed until Reflex properly passes SIGTERM on backend.
-STOPSIGNAL SIGKILL
+#STOPSIGNAL SIGKILL
 
 # Always apply migrations before starting the backend.
 # CMD [ -d alembic ] && reflex db migrate; reflex run --env prod
